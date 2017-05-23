@@ -153,7 +153,7 @@ int vm_swappiness = 0;
  * The total number of pages which are beyond the high watermark within all
  * zones.
  */
-unsigned long vm_total_pages;
+long vm_total_pages;
 
 #ifdef CONFIG_KSWAPD_CPU_AFFINITY_MASK
 char *kswapd_cpu_mask = CONFIG_KSWAPD_CPU_AFFINITY_MASK;
