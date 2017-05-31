@@ -1472,7 +1472,6 @@ static ssize_t touchkey_led_control(struct device *dev,
 		data = ledCmd[data];
 #else
 	data = ledCmd[data];
-
 #endif
 	if (!led_on_keypress || touchkey_pressed || data == TK_CMD_LED_OFF) {
 		ret = i2c_touchkey_write(tkey_i2c->client, (u8 *) &data, 1);
